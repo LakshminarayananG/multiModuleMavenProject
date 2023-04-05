@@ -46,6 +46,8 @@ public class BrowserImplementation implements Browser {
 		}
 	}
 	
+	
+	
 	public RemoteWebDriver getDriver() {
 		return remoteWebDriver.get();
 	}

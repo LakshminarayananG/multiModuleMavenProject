@@ -21,7 +21,6 @@ public class SampleTest extends BrowserImplementation {
 		browser = new BrowserImplementation();
 		browser.startApp("https://www.google.com");
 		
-		
 	}
 	
 	

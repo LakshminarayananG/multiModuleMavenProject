@@ -18,13 +18,13 @@ import config.ConfigurationManager;
 
 public class DriverFactory  {
 
-	private static final ThreadLocal<Playwright> playwright = new ThreadLocal<Playwright>();
-	private static final ThreadLocal<Browser> driver = new ThreadLocal<Browser>();
-	private static final ThreadLocal<String> token = new ThreadLocal<String>();
-	protected static final ThreadLocal<BrowserContext> context = new ThreadLocal<BrowserContext>();
-	protected static final ThreadLocal<Page> page = new ThreadLocal<Page>();
-	protected static final ThreadLocal<Page> secondPage = new ThreadLocal<Page>();
-	protected static final ThreadLocal<FrameLocator> frameLocator = new ThreadLocal<FrameLocator>();
+	public static final ThreadLocal<Playwright> playwright = new ThreadLocal<Playwright>();
+	public static final ThreadLocal<Browser> driver = new ThreadLocal<Browser>();
+	public static final ThreadLocal<String> token = new ThreadLocal<String>();
+	public static final ThreadLocal<BrowserContext> context = new ThreadLocal<BrowserContext>();
+	public static final ThreadLocal<Page> page = new ThreadLocal<Page>();
+	public static final ThreadLocal<Page> secondPage = new ThreadLocal<Page>();
+	public static final ThreadLocal<FrameLocator> frameLocator = new ThreadLocal<FrameLocator>();
 
 	/**
 	 * Launches the preferred browser in the head(less) mode.

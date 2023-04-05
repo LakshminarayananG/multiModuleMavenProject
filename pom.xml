@@ -4,8 +4,8 @@
   <artifactId>multimoduleproj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>selenium-spring</name>
-	<description>Customized Web Automation Framework with selenium webdriver and spring-boot.</description>
+  <name>multiModuleProject</name>
+	<description>Customized Web Automation Framework with selenium webdriver and playwright.</description>
 	<properties>
 		<maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
@@ -130,8 +130,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-    
-    
    <modules>
    	<module>UISeleniumProject</module>
    	<module>UISeleniumTests</module>

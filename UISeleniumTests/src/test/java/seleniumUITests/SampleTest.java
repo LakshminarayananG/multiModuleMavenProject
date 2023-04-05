@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 
 import browserImpl.BrowserImplementation;
+import fakerData.FakerDataFactory;
 
 public class SampleTest extends BrowserImplementation {
 
@@ -28,10 +29,8 @@ public class SampleTest extends BrowserImplementation {
 	public void typeSomething() {
 		browser = new BrowserImplementation();
 		browser.startApp("http://leaftaps.com/opentaps");
-		browser.wEdit().type(wElement().locateElement("id", "username"), "DemoSalesManager");
-	
-		
-	}
+		browser.wEdit().type(wElement().locateElement("id", "username"), FakerDataFactory.getFirstName());
+		}
 
 
 	

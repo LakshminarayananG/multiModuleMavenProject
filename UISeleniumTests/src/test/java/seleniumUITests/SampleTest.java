@@ -12,9 +12,7 @@ public class SampleTest extends BrowserImplementation {
 
 	BrowserImplementation browser;
 
-	/*
-	 * @BeforeClass public void setUp() { browser = new BrowserImplementation(); }
-	 */
+	
 	
 	@Test
 	public void browserLaunch() {		
@@ -29,6 +27,7 @@ public class SampleTest extends BrowserImplementation {
 		browser = new BrowserImplementation();
 		browser.startApp("http://leaftaps.com/opentaps");
 		browser.wEdit().type(wElement().locateElement("id", "username"), FakerDataFactory.getFirstName());
+		browser.wEdit().type(wElement().locateElement("id", "password"), FakerDataFactory.getLastName());
 		}
 
 
